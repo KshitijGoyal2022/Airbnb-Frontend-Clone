@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 
 //Components
 import Navbar from './components/navbar/Navbar'
+import Home from './page'
 
 
 export const metadata: Metadata = {
@@ -23,10 +24,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={font.className}>
-
           <Navbar />
-        {children}
-      </body>
+            {children}
+          <Home />
+      </body> 
     </html>
   )
 }
