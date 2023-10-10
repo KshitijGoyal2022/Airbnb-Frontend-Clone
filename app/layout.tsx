@@ -26,7 +26,6 @@ export default function RootLayout({
       <body className={font.className}>
           <Navbar />
             {children}
-          <Home />
       </body> 
     </html>
   )
